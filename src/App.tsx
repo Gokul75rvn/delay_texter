@@ -1,4 +1,3 @@
-import { HomeIcon } from 'lucide-react'
 import Home from './pages/Home'
 
 function App() {

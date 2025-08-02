@@ -1,4 +1,4 @@
-import Message from "../components/message";
+import Message from '../components/Message';
 
 const Home = ( ) =>{
     return(
