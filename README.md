@@ -1,69 +1,55 @@
-# React + TypeScript + Vite
+# ⏳ Delay Messager (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Delay Messager** is a simple React-based app that allows users to type a message, set a delay timer, and have it automatically sent after the specified time. The message can also be canceled before it's sent, giving users full control.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 💬 Type and schedule a message to be sent after a delay.
+- ⏱ Real-time countdown displayed under the message.
+- ❌ Cancel the message before the timer ends.
+- 🎯 Simple and intuitive UI using React Hooks.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📸 Live Demo
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+🔗 [Try it now!](https://delay-texter-avuuo1wi6-gokul75rvns-projects.vercel.app)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠 Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- ⚛️ React (Vite or Create React App)
+- 🧠 React Hooks (`useState`, `useEffect`)
+- 💅 Tailwind CSS *(or your CSS setup)*
+- ⏰ JavaScript Timer APIs
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 📂 Folder Structure
+
+delay-messager/
+├── public/
+├── src/
+│ ├── components/
+│ │ └── DelayMessage.jsx
+│ ├── App.jsx
+│ └── index.js
+├── package.json
+└── README.md
+
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/Gokul75rvn/Delay-messager.git
+cd Delay-messager
+npm install
+npm run dev
+✨ Author
+Made with ❤️ by Gokul S
